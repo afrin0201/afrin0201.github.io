@@ -331,7 +331,6 @@ function initTerminal() {
 <div class="terminal-log-line"><span class="term-highlight">Name:</span> Syeda Afrin Jahan</div>
 <div class="terminal-log-line"><span class="term-highlight">Institution:</span> Bangladesh University of Engineering and Technology (BUET)</div>
 <div class="terminal-log-line"><span class="term-highlight">Department:</span> Computer Science & Engineering (B.Sc. 2025 – 2029)</div>
-<div class="terminal-log-line"><span class="term-highlight">Student ID:</span> 2305172</div>
 <div class="terminal-log-line"><span class="term-highlight">Interests:</span> Human-Computer Interaction (HCI), Machine Learning, Speech AI, Cryptographic Image Security</div>
     `,
     skills: () => `
@@ -361,10 +360,8 @@ function initTerminal() {
     `,
     contact: () => `
 <div class="terminal-log-line"><span class="term-highlight">Email:</span> s.a.jahan.buetcse.394@gmail.com</div>
-<div class="terminal-log-line"><span class="term-highlight">BUET Mail:</span> 2305172@cse.buet.ac.bd</div>
 <div class="terminal-log-line"><span class="term-highlight">LinkedIn:</span> <a href="https://www.linkedin.com/in/syeda-afrin-j-98a786353/" target="_blank" style="color: #38bdf8;">linkedin.com/in/syeda-afrin-j-98a786353</a></div>
 <div class="terminal-log-line"><span class="term-highlight">GitHub:</span> <a href="https://github.com/afrin0201" target="_blank" style="color: #38bdf8;">github.com/afrin0201</a></div>
-<div class="terminal-log-line"><span class="term-highlight">Phone:</span> (+880) 1612031950</div>
 <div class="terminal-log-line"><span class="term-highlight">Location:</span> Dhaka, Bangladesh</div>
     `,
     linkedin: () => `

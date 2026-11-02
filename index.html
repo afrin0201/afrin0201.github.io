@@ -34,7 +34,7 @@
   <header class="navbar-wrapper">
     <nav class="navbar" id="main-nav" aria-label="Main Navigation">
       <a href="#hero" class="nav-brand" id="nav-brand-link">
-        <span class="brand-monogram">AJ</span>
+        <img src="assets/profile.jpg" alt="Syeda Afrin Jahan" class="brand-avatar-img" />
         <span class="brand-text">Syeda Afrin Jahan</span>
       </a>
 
@@ -68,8 +68,16 @@
           </svg>
         </button>
 
+        <!-- LinkedIn Profile External Link -->
+        <a href="https://www.linkedin.com/in/syeda-afrin-j-98a786353/" target="_blank" rel="noopener noreferrer" class="btn btn-sm btn-ghost" id="nav-linkedin-btn" title="LinkedIn Profile">
+          <svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor">
+            <path d="M19 3a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h14m-.5 15.5v-5.3a3.26 3.26 0 0 0-3.26-3.26c-.85 0-1.84.52-2.28 1.3v-1.11h-2.79v8.37h2.79v-4.93c0-.77.62-1.4 1.39-1.4a1.4 1.4 0 0 1 1.4 1.4v4.93h2.75M6.46 10.9h2.77v8.37H6.46v-8.37M7.84 6.7a1.62 1.62 0 0 0-1.62 1.62 1.62 1.62 0 0 0 1.62 1.62 1.62 1.62 0 0 0 1.62-1.62 1.62 1.62 0 0 0-1.62-1.62z"/>
+          </svg>
+          <span>LinkedIn</span>
+        </a>
+
         <!-- GitHub Profile External Link -->
-        <a href="https://github.com/afrin0201" target="_blank" rel="noopener noreferrer" class="btn btn-sm btn-ghost" id="nav-github-btn">
+        <a href="https://github.com/afrin0201" target="_blank" rel="noopener noreferrer" class="btn btn-sm btn-ghost" id="nav-github-btn" title="GitHub Profile">
           <svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor">
             <path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0 0 24 12c0-6.63-5.37-12-12-12z"/>
           </svg>
@@ -92,10 +100,45 @@
     <!-- HERO SECTION -->
     <section class="hero-section" id="hero">
       <div class="container hero-grid">
+        
+        <!-- LEFT COLUMN: FULL PORTRAIT SHOWCASE -->
+        <div class="hero-photo-column">
+          <div class="hero-portrait-card glass-panel">
+            <div class="hero-portrait-img-wrap">
+              <img 
+                src="assets/profile.jpg" 
+                alt="Syeda Afrin Jahan" 
+                class="hero-full-photo" 
+                id="hero-full-photo"
+              />
+              <div class="portrait-badge-overlay">
+                <span class="indicator-pulse"></span>
+                <span>Open to Research &amp; Projects</span>
+              </div>
+            </div>
+            <div class="hero-portrait-footer">
+              <div class="portrait-footer-name">Syeda Afrin Jahan</div>
+              <div class="portrait-footer-sub">Student ID: 2305172 &bull; BUET CSE</div>
+              <div class="portrait-footer-links">
+                <a href="https://www.linkedin.com/in/syeda-afrin-j-98a786353/" target="_blank" rel="noopener noreferrer" class="badge-tag linkedin-chip" title="LinkedIn Profile">
+                  <svg viewBox="0 0 24 24" width="13" height="13" fill="currentColor"><path d="M19 3a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h14m-.5 15.5v-5.3a3.26 3.26 0 0 0-3.26-3.26c-.85 0-1.84.52-2.28 1.3v-1.11h-2.79v8.37h2.79v-4.93c0-.77.62-1.4 1.39-1.4a1.4 1.4 0 0 1 1.4 1.4v4.93h2.75M6.46 10.9h2.77v8.37H6.46v-8.37M7.84 6.7a1.62 1.62 0 0 0-1.62 1.62 1.62 1.62 0 0 0 1.62 1.62 1.62 1.62 0 0 0 1.62-1.62 1.62 1.62 0 0 0-1.62-1.62z"/></svg>
+                  LinkedIn
+                </a>
+                <a href="https://github.com/afrin0201" target="_blank" rel="noopener noreferrer" class="badge-tag" title="GitHub Profile">
+                  <svg viewBox="0 0 24 24" width="13" height="13" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0 0 24 12c0-6.63-5.37-12-12-12z"/></svg>
+                  GitHub
+                </a>
+                <span class="badge-tag"><span class="icon">📍</span> Dhaka</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- RIGHT COLUMN: INTRO, BIO, CODE HUD, ACTIONS -->
         <div class="hero-content">
           <div class="hero-badge">
             <span class="status-dot"></span>
-            <span>BUET Computer Science & Engineering</span>
+            <span>BUET Computer Science &amp; Engineering</span>
           </div>
           
           <h1 class="hero-title">
@@ -129,6 +172,17 @@
             </div>
           </div>
 
+          <!-- Developer HUD Code Panel -->
+          <div class="code-hud">
+            <div class="hud-line"><span class="code-keyword">const</span> <span class="code-var">developer</span> = {</div>
+            <div class="hud-line indent"><span class="code-prop">name:</span> <span class="code-str">"Syeda Afrin Jahan"</span>,</div>
+            <div class="hud-line indent"><span class="code-prop">institution:</span> <span class="code-str">"BUET, CSE Dept"</span>,</div>
+            <div class="hud-line indent"><span class="code-prop">focus:</span> [<span class="code-str">"HCI"</span>, <span class="code-str">"Machine Learning"</span>, <span class="code-str">"Security"</span>],</div>
+            <div class="hud-line indent"><span class="code-prop">primaryLanguages:</span> [<span class="code-str">"C++"</span>, <span class="code-str">"Python"</span>, <span class="code-str">"JS"</span>, <span class="code-str">"Java"</span>],</div>
+            <div class="hud-line indent"><span class="code-prop">currentTerm:</span> <span class="code-str">"Level-2 Term-1"</span>,</div>
+            <div class="hud-line"><span class="code-bracket">};</span></div>
+          </div>
+
           <div class="hero-actions">
             <a href="#projects" class="btn btn-primary" id="btn-explore-projects">
               <span>Explore Projects</span>
@@ -138,11 +192,18 @@
               </svg>
             </a>
             
+            <a href="https://www.linkedin.com/in/syeda-afrin-j-98a786353/" target="_blank" rel="noopener noreferrer" class="btn btn-outline" id="btn-hero-linkedin" title="LinkedIn Profile">
+              <svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor">
+                <path d="M19 3a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h14m-.5 15.5v-5.3a3.26 3.26 0 0 0-3.26-3.26c-.85 0-1.84.52-2.28 1.3v-1.11h-2.79v8.37h2.79v-4.93c0-.77.62-1.4 1.39-1.4a1.4 1.4 0 0 1 1.4 1.4v4.93h2.75M6.46 10.9h2.77v8.37H6.46v-8.37M7.84 6.7a1.62 1.62 0 0 0-1.62 1.62 1.62 1.62 0 0 0 1.62 1.62 1.62 1.62 0 0 0 1.62-1.62 1.62 1.62 0 0 0-1.62-1.62z"/>
+              </svg>
+              <span>LinkedIn</span>
+            </a>
+
             <a href="https://github.com/afrin0201" target="_blank" rel="noopener noreferrer" class="btn btn-outline" id="btn-hero-github">
               <svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor">
                 <path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0 0 24 12c0-6.63-5.37-12-12-12z"/>
               </svg>
-              <span>GitHub @afrin0201</span>
+              <span>GitHub</span>
             </a>
 
             <button class="btn btn-ghost copy-email-btn" id="hero-copy-email-btn" data-email="s.a.jahan.buetcse.394@gmail.com" title="Copy Email">
@@ -152,58 +213,6 @@
               </svg>
               <span class="copy-text">Copy Email</span>
             </button>
-          </div>
-        </div>
-
-        <!-- HERO PROFILE CARD (Genuine Avatar + Code HUD) -->
-        <div class="hero-visual">
-          <div class="developer-card glass-panel">
-            <div class="card-header-bar">
-              <div class="terminal-dots">
-                <span class="dot dot-red"></span>
-                <span class="dot dot-yellow"></span>
-                <span class="dot dot-green"></span>
-              </div>
-              <span class="card-title-tag">afrin0201.developer_profile</span>
-            </div>
-
-            <div class="profile-avatar-wrapper">
-              <div class="avatar-ring">
-                <img 
-                  src="assets/avatar.png" 
-                  alt="Syeda Afrin Jahan GitHub Avatar" 
-                  class="profile-avatar-img"
-                  id="profile-avatar-display"
-                  onerror="this.onerror=null; this.src='https://avatars.githubusercontent.com/u/218437211?v=4';"
-                />
-              </div>
-              <div class="profile-info-mini">
-                <h3 class="profile-name">Syeda Afrin Jahan</h3>
-                <span class="profile-sub">Student ID: 2305172 • BUET CSE</span>
-                <div class="profile-status">
-                  <span class="indicator-pulse"></span>
-                  <span>Open to Research & Projects</span>
-                </div>
-              </div>
-            </div>
-
-            <!-- Code HUD / Snippet -->
-            <div class="code-hud">
-              <div class="hud-line"><span class="code-keyword">const</span> <span class="code-var">developer</span> = {</div>
-              <div class="hud-line indent"><span class="code-prop">name:</span> <span class="code-str">"Syeda Afrin Jahan"</span>,</div>
-              <div class="hud-line indent"><span class="code-prop">institution:</span> <span class="code-str">"BUET, CSE Dept"</span>,</div>
-              <div class="hud-line indent"><span class="code-prop">focus:</span> [<span class="code-str">"HCI"</span>, <span class="code-str">"Machine Learning"</span>, <span class="code-str">"Security"</span>],</div>
-              <div class="hud-line indent"><span class="code-prop">primaryLanguages:</span> [<span class="code-str">"C++"</span>, <span class="code-str">"Python"</span>, <span class="code-str">"JS"</span>, <span class="code-str">"Java"</span>],</div>
-              <div class="hud-line indent"><span class="code-prop">currentTerm:</span> <span class="code-str">"Level-2 Term-1"</span>,</div>
-              <div class="hud-line"><span class="code-bracket">};</span></div>
-            </div>
-
-            <div class="card-footer-chips">
-              <span class="badge-tag"><span class="icon">📍</span> Dhaka, Bangladesh</span>
-              <a href="mailto:s.a.jahan.buetcse.394@gmail.com" class="badge-tag email-link" title="Click to email">
-                <span class="icon">✉️</span> s.a.jahan.buetcse.394@gmail.com
-              </a>
-            </div>
           </div>
         </div>
       </div>
@@ -933,6 +942,18 @@
               <div class="contact-card-content">
                 <span class="contact-card-label">GitHub Profile</span>
                 <a href="https://github.com/afrin0201" target="_blank" rel="noopener noreferrer" class="contact-card-value">github.com/afrin0201</a>
+              </div>
+            </div>
+
+            <div class="contact-card-item">
+              <div class="contact-card-icon icon-cyan">
+                <svg viewBox="0 0 24 24" width="22" height="22" fill="currentColor">
+                  <path d="M19 3a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h14m-.5 15.5v-5.3a3.26 3.26 0 0 0-3.26-3.26c-.85 0-1.84.52-2.28 1.3v-1.11h-2.79v8.37h2.79v-4.93c0-.77.62-1.4 1.39-1.4a1.4 1.4 0 0 1 1.4 1.4v4.93h2.75M6.46 10.9h2.77v8.37H6.46v-8.37M7.84 6.7a1.62 1.62 0 0 0-1.62 1.62 1.62 1.62 0 0 0 1.62 1.62 1.62 1.62 0 0 0 1.62-1.62 1.62 1.62 0 0 0-1.62-1.62z"/>
+                </svg>
+              </div>
+              <div class="contact-card-content">
+                <span class="contact-card-label">LinkedIn Profile</span>
+                <a href="https://www.linkedin.com/in/syeda-afrin-j-98a786353/" target="_blank" rel="noopener noreferrer" class="contact-card-value">linkedin.com/in/syeda-afrin-j-98a786353</a>
               </div>
             </div>
 

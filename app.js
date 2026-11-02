@@ -362,8 +362,13 @@ function initTerminal() {
     contact: () => `
 <div class="terminal-log-line"><span class="term-highlight">Email:</span> s.a.jahan.buetcse.394@gmail.com</div>
 <div class="terminal-log-line"><span class="term-highlight">BUET Mail:</span> 2305172@cse.buet.ac.bd</div>
+<div class="terminal-log-line"><span class="term-highlight">LinkedIn:</span> <a href="https://www.linkedin.com/in/syeda-afrin-j-98a786353/" target="_blank" style="color: #38bdf8;">linkedin.com/in/syeda-afrin-j-98a786353</a></div>
+<div class="terminal-log-line"><span class="term-highlight">GitHub:</span> <a href="https://github.com/afrin0201" target="_blank" style="color: #38bdf8;">github.com/afrin0201</a></div>
 <div class="terminal-log-line"><span class="term-highlight">Phone:</span> (+880) 1612031950</div>
 <div class="terminal-log-line"><span class="term-highlight">Location:</span> Dhaka, Bangladesh</div>
+    `,
+    linkedin: () => `
+<div class="terminal-log-line"><span class="term-highlight">LinkedIn:</span> <a href="https://www.linkedin.com/in/syeda-afrin-j-98a786353/" target="_blank" style="color: #38bdf8;">https://www.linkedin.com/in/syeda-afrin-j-98a786353/</a></div>
     `,
     whoami: () => `<div class="terminal-log-line">guest@visitor-session: You are exploring the portfolio of Syeda Afrin Jahan.</div>`,
     date: () => `<div class="terminal-log-line">${new Date().toUTCString()}</div>`,
@@ -585,10 +590,6 @@ async function initGitHubLiveSync() {
       const updatedDate = new Date(userData.updated_at);
       const monthNames = ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'];
       lastActiveEl.textContent = `${monthNames[updatedDate.getMonth()]} ${updatedDate.getFullYear()}`;
-    }
-
-    if (userData.avatar_url && avatarImg) {
-      avatarImg.src = userData.avatar_url;
     }
   } catch (err) {
     // Offline / rate limit fallback is already gracefully populated with verified data

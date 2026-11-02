@@ -1,0 +1,1056 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Syeda Afrin Jahan | Computer Science & Engineering, BUET</title>
+  
+  <!-- SEO Meta Tags -->
+  <meta name="description" content="Portfolio of Syeda Afrin Jahan, Computer Science & Engineering undergraduate at BUET. Researcher in Human-Computer Interaction (HCI) and Machine Learning, with projects in optical image encryption, conversational AI, and full-stack software development.">
+  <meta name="keywords" content="Syeda Afrin Jahan, BUET CSE, HCI, Machine Learning, Fourier Domain Image Encryptor, Articulate AI, Charulota, Portfolio, GitHub afrin0201">
+  <meta name="author" content="Syeda Afrin Jahan">
+  
+  <!-- Open Graph / Social Media -->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Syeda Afrin Jahan | BUET CSE & HCI/ML Researcher">
+  <meta property="og:description" content="Explore projects, research interests, and GitHub repositories of Syeda Afrin Jahan (BUET CSE).">
+  <meta property="og:url" content="https://github.com/afrin0201">
+  <meta name="theme-color" content="#090d16">
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;500;600&family=Inter:wght@300;400;500;600;700&family=Outfit:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css">
+</head>
+<body data-theme="dark">
+
+  <!-- Background Ambient Glow Effects -->
+  <div class="ambient-glow glow-top" aria-hidden="true"></div>
+  <div class="ambient-glow glow-mid" aria-hidden="true"></div>
+
+  <!-- Navigation Bar -->
+  <header class="navbar-wrapper">
+    <nav class="navbar" id="main-nav" aria-label="Main Navigation">
+      <a href="#hero" class="nav-brand" id="nav-brand-link">
+        <span class="brand-monogram">AJ</span>
+        <span class="brand-text">Syeda Afrin Jahan</span>
+      </a>
+
+      <div class="nav-links" id="nav-menu">
+        <a href="#about" class="nav-item">About</a>
+        <a href="#research" class="nav-item">Research</a>
+        <a href="#projects" class="nav-item">Projects</a>
+        <a href="#skills" class="nav-item">Skills</a>
+        <a href="#awards" class="nav-item">Awards</a>
+        <a href="#education" class="nav-item">Education</a>
+        <a href="#terminal" class="nav-item">Terminal</a>
+        <a href="#contact" class="nav-item">Contact</a>
+      </div>
+
+      <div class="nav-actions">
+        <!-- Theme Toggle -->
+        <button id="theme-toggle-btn" class="icon-btn" aria-label="Toggle Light/Dark Theme" title="Toggle Theme">
+          <svg class="sun-icon" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <circle cx="12" cy="12" r="5"></circle>
+            <line x1="12" y1="1" x2="12" y2="3"></line>
+            <line x1="12" y1="21" x2="12" y2="23"></line>
+            <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+            <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+            <line x1="1" y1="12" x2="3" y2="12"></line>
+            <line x1="21" y1="12" x2="23" y2="12"></line>
+            <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+            <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+          </svg>
+          <svg class="moon-icon" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+          </svg>
+        </button>
+
+        <!-- GitHub Profile External Link -->
+        <a href="https://github.com/afrin0201" target="_blank" rel="noopener noreferrer" class="btn btn-sm btn-ghost" id="nav-github-btn">
+          <svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor">
+            <path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0 0 24 12c0-6.63-5.37-12-12-12z"/>
+          </svg>
+          <span>GitHub</span>
+        </a>
+
+        <!-- Mobile Menu Toggle -->
+        <button id="mobile-menu-toggle" class="icon-btn mobile-only" aria-label="Open Mobile Menu">
+          <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <line x1="3" y1="12" x2="21" y2="12"></line>
+            <line x1="3" y1="6" x2="21" y2="6"></line>
+            <line x1="3" y1="18" x2="21" y2="18"></line>
+          </svg>
+        </button>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <!-- HERO SECTION -->
+    <section class="hero-section" id="hero">
+      <div class="container hero-grid">
+        <div class="hero-content">
+          <div class="hero-badge">
+            <span class="status-dot"></span>
+            <span>BUET Computer Science & Engineering</span>
+          </div>
+          
+          <h1 class="hero-title">
+            Hi, I'm <span class="text-gradient">Syeda Afrin Jahan</span>
+          </h1>
+
+          <div class="hero-typewriter-wrap">
+            <span class="typewriter-label">Passionate about</span>
+            <span id="typewriter-text" class="typewriter-text"></span>
+            <span class="typewriter-cursor">|</span>
+          </div>
+
+          <p class="hero-bio">
+            Undergraduate student and researcher at <strong>Bangladesh University of Engineering and Technology (BUET)</strong>.
+            Exploring the confluence of <strong>Human-Computer Interaction (HCI)</strong>, <strong>Machine Learning</strong>, 
+            and <strong>HCI with Security</strong> to engineer interactive, accessible, and high-impact digital systems.
+          </p>
+
+          <div class="hero-stats-row">
+            <div class="stat-pill">
+              <span class="stat-value" id="stat-repos-count">7+</span>
+              <span class="stat-label">GitHub Repos</span>
+            </div>
+            <div class="stat-pill">
+              <span class="stat-value">Best Project</span>
+              <span class="stat-label">BUET CSE 220 Award</span>
+            </div>
+            <div class="stat-pill">
+              <span class="stat-value">Hackathon</span>
+              <span class="stat-label">SCIBLITZ 2.0 Finalist</span>
+            </div>
+          </div>
+
+          <div class="hero-actions">
+            <a href="#projects" class="btn btn-primary" id="btn-explore-projects">
+              <span>Explore Projects</span>
+              <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <line x1="5" y1="12" x2="19" y2="12"></line>
+                <polyline points="12 5 19 12 12 19"></polyline>
+              </svg>
+            </a>
+            
+            <a href="https://github.com/afrin0201" target="_blank" rel="noopener noreferrer" class="btn btn-outline" id="btn-hero-github">
+              <svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor">
+                <path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0 0 24 12c0-6.63-5.37-12-12-12z"/>
+              </svg>
+              <span>GitHub @afrin0201</span>
+            </a>
+
+            <button class="btn btn-ghost copy-email-btn" id="hero-copy-email-btn" data-email="s.a.jahan.buetcse.394@gmail.com" title="Copy Email">
+              <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect>
+                <path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path>
+              </svg>
+              <span class="copy-text">Copy Email</span>
+            </button>
+          </div>
+        </div>
+
+        <!-- HERO PROFILE CARD (Genuine Avatar + Code HUD) -->
+        <div class="hero-visual">
+          <div class="developer-card glass-panel">
+            <div class="card-header-bar">
+              <div class="terminal-dots">
+                <span class="dot dot-red"></span>
+                <span class="dot dot-yellow"></span>
+                <span class="dot dot-green"></span>
+              </div>
+              <span class="card-title-tag">afrin0201.developer_profile</span>
+            </div>
+
+            <div class="profile-avatar-wrapper">
+              <div class="avatar-ring">
+                <img 
+                  src="assets/avatar.png" 
+                  alt="Syeda Afrin Jahan GitHub Avatar" 
+                  class="profile-avatar-img"
+                  id="profile-avatar-display"
+                  onerror="this.onerror=null; this.src='https://avatars.githubusercontent.com/u/218437211?v=4';"
+                />
+              </div>
+              <div class="profile-info-mini">
+                <h3 class="profile-name">Syeda Afrin Jahan</h3>
+                <span class="profile-sub">Student ID: 2305172 • BUET CSE</span>
+                <div class="profile-status">
+                  <span class="indicator-pulse"></span>
+                  <span>Open to Research & Projects</span>
+                </div>
+              </div>
+            </div>
+
+            <!-- Code HUD / Snippet -->
+            <div class="code-hud">
+              <div class="hud-line"><span class="code-keyword">const</span> <span class="code-var">developer</span> = {</div>
+              <div class="hud-line indent"><span class="code-prop">name:</span> <span class="code-str">"Syeda Afrin Jahan"</span>,</div>
+              <div class="hud-line indent"><span class="code-prop">institution:</span> <span class="code-str">"BUET, CSE Dept"</span>,</div>
+              <div class="hud-line indent"><span class="code-prop">focus:</span> [<span class="code-str">"HCI"</span>, <span class="code-str">"Machine Learning"</span>, <span class="code-str">"Security"</span>],</div>
+              <div class="hud-line indent"><span class="code-prop">primaryLanguages:</span> [<span class="code-str">"C++"</span>, <span class="code-str">"Python"</span>, <span class="code-str">"JS"</span>, <span class="code-str">"Java"</span>],</div>
+              <div class="hud-line indent"><span class="code-prop">currentTerm:</span> <span class="code-str">"Level-2 Term-1"</span>,</div>
+              <div class="hud-line"><span class="code-bracket">};</span></div>
+            </div>
+
+            <div class="card-footer-chips">
+              <span class="badge-tag"><span class="icon">📍</span> Dhaka, Bangladesh</span>
+              <a href="mailto:s.a.jahan.buetcse.394@gmail.com" class="badge-tag email-link" title="Click to email">
+                <span class="icon">✉️</span> s.a.jahan.buetcse.394@gmail.com
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- RESEARCH FOCUS SECTION -->
+    <section class="section-padding section-research" id="research">
+      <div class="container">
+        <div class="section-heading text-center">
+          <div class="sub-badge">Academic Direction</div>
+          <h2 class="section-title">Research Interests</h2>
+          <p class="section-subtitle">Bridging intelligent algorithmic backends with intuitive human interaction paradigms.</p>
+        </div>
+
+        <div class="research-grid">
+          <div class="research-card glass-panel">
+            <div class="research-icon-box icon-cyan">
+              <svg viewBox="0 0 24 24" width="28" height="28" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <circle cx="12" cy="12" r="10"></circle>
+                <path d="M12 2a14.5 14.5 0 0 0 0 20 14.5 14.5 0 0 0 0-20"></path>
+                <path d="M2 12h20"></path>
+              </svg>
+            </div>
+            <h3 class="card-title">Human-Computer Interaction (HCI)</h3>
+            <p class="card-desc">
+              Designing accessible, transparent interfaces that adapt to user behaviors. Focus on reducing cognitive load and creating accessible assistive technologies.
+            </p>
+            <div class="card-pills">
+              <span>UX Ergonomics</span>
+              <span>Cognitive Models</span>
+              <span>Assistive Tech</span>
+            </div>
+          </div>
+
+          <div class="research-card glass-panel">
+            <div class="research-icon-box icon-indigo">
+              <svg viewBox="0 0 24 24" width="28" height="28" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <rect x="2" y="3" width="20" height="14" rx="2" ry="2"></rect>
+                <line x1="8" y1="21" x2="16" y2="21"></line>
+                <line x1="12" y1="17" x2="12" y2="21"></line>
+              </svg>
+            </div>
+            <h3 class="card-title">Machine Learning & Neural Signals</h3>
+            <p class="card-desc">
+              Developing practical ML models for voice speech evaluation, signals processing, phoneme analysis, and intelligent pattern classification.
+            </p>
+            <div class="card-pills">
+              <span>Speech Recognition</span>
+              <span>Phoneme Scoring</span>
+              <span>Signal Analysis</span>
+            </div>
+          </div>
+
+          <div class="research-card glass-panel">
+            <div class="research-icon-box icon-violet">
+              <svg viewBox="0 0 24 24" width="28" height="28" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path>
+              </svg>
+            </div>
+            <h3 class="card-title">HCI with Security & Privacy</h3>
+            <p class="card-desc">
+              Examining secure cryptographic protocols (such as Double Random Phase Fourier optical encryption) with frictionless, secure user authentication workflows.
+            </p>
+            <div class="card-pills">
+              <span>Optical Encryption</span>
+              <span>JWT Authentication</span>
+              <span>Usable Security</span>
+            </div>
+          </div>
+
+          <div class="research-card glass-panel">
+            <div class="research-icon-box icon-emerald">
+              <svg viewBox="0 0 24 24" width="28" height="28" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"></polygon>
+              </svg>
+            </div>
+            <h3 class="card-title">HCI with Applied AI</h3>
+            <p class="card-desc">
+              Building conversational AI experiences (e.g. Articulate AI) tailored for non-native language learners with real-time feedback loops.
+            </p>
+            <div class="card-pills">
+              <span>Bilingual Coaches</span>
+              <span>LLM Orchestration</span>
+              <span>Interactive Agents</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- PROJECTS & GITHUB REPOSITORIES -->
+    <section class="section-padding" id="projects">
+      <div class="container">
+        <div class="section-heading text-center">
+          <div class="sub-badge">Featured Work & Code</div>
+          <h2 class="section-title">Projects & Repositories</h2>
+          <p class="section-subtitle">Real engineering projects built for BUET academic sessions, national hackathons, and open source.</p>
+        </div>
+
+        <!-- Filter Controls -->
+        <div class="filter-bar" id="project-filter-bar">
+          <button class="filter-btn active" data-filter="all">All Projects</button>
+          <button class="filter-btn" data-filter="featured">Featured & Awards</button>
+          <button class="filter-btn" data-filter="ai-ml">AI & Signal Processing</button>
+          <button class="filter-btn" data-filter="web">Web & Database</button>
+          <button class="filter-btn" data-filter="systems">Systems & C++</button>
+        </div>
+
+        <!-- Projects Grid -->
+        <div class="projects-grid" id="projects-container">
+
+          <!-- PROJECT 1: Fourier Domain Image Encryptor -->
+          <article class="project-card glass-panel" data-category="featured ai-ml" id="project-card-fourier">
+            <div class="project-card-top">
+              <div class="badge-row">
+                <span class="project-award-badge">
+                  <svg viewBox="0 0 24 24" width="14" height="14" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+                  Best Project Award • CSE 220
+                </span>
+                <span class="repo-lang-badge lang-python">Python</span>
+              </div>
+              <h3 class="project-title">Fourier Domain Image Encryptor</h3>
+              <p class="project-affiliation">Course project, CSE 220 (Signals and Linear Systems Sessional), BUET • Sep 2026 – Oct 2026</p>
+            </div>
+
+            <div class="project-body">
+              <p class="project-summary">
+                Implemented secure optical image encryption based on <strong>Double Random Phase Encoding (DRPE)</strong> in the Fourier domain. Built an interactive Streamlit application allowing users to encrypt, transform, and decrypt multi-spectral imagery without writing code.
+              </p>
+
+              <div class="project-highlights">
+                <div class="highlight-item">
+                  <svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg>
+                  Double Random Phase Mask generation in spatial and frequency domains
+                </div>
+                <div class="highlight-item">
+                  <svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg>
+                  Fast Fourier Transform (FFT) signal processing pipeline
+                </div>
+                <div class="highlight-item">
+                  <svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg>
+                  Interactive Streamlit interface with instantaneous phase decoding
+                </div>
+              </div>
+
+              <div class="tech-stack-chips">
+                <span class="chip">Python</span>
+                <span class="chip">Fourier Transform</span>
+                <span class="chip">DRPE</span>
+                <span class="chip">Streamlit</span>
+                <span class="chip">NumPy</span>
+              </div>
+            </div>
+
+            <div class="project-actions">
+              <a href="https://github.com/afrin0201/fourier-domain-image-encryptor" target="_blank" rel="noopener noreferrer" class="btn btn-sm btn-primary">
+                <svg viewBox="0 0 24 24" width="16" height="16" fill="currentColor">
+                  <path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0 0 24 12c0-6.63-5.37-12-12-12z"/>
+                </svg>
+                <span>View Code on GitHub</span>
+              </a>
+              <button class="btn btn-sm btn-ghost project-details-btn" data-project="fourier">
+                <span>View Details</span>
+              </button>
+            </div>
+          </article>
+
+          <!-- PROJECT 2: Articulate AI -->
+          <article class="project-card glass-panel" data-category="featured ai-ml web" id="project-card-articulate">
+            <div class="project-card-top">
+              <div class="badge-row">
+                <span class="project-award-badge badge-silver">
+                  <svg viewBox="0 0 24 24" width="14" height="14" fill="currentColor"><circle cx="12" cy="8" r="7"/><polyline points="8.21 13.89 7 23 12 20 17 23 15.79 13.88"/></svg>
+                  Finalist • SCIBLITZ 2.0 CUET Hackathon
+                </span>
+                <span class="repo-lang-badge lang-react">React</span>
+              </div>
+              <h3 class="project-title">Articulate AI</h3>
+              <p class="project-affiliation">Team Project (Team of 4) • Jul 2026</p>
+            </div>
+
+            <div class="project-body">
+              <p class="project-summary">
+                An AI-driven spoken-English coach built specifically for native Bengali speakers. Integrates phoneme-level pronunciation evaluation, native Bangla language corrective feedback, and an adaptive IELTS speaking simulation module.
+              </p>
+
+              <div class="project-highlights">
+                <div class="highlight-item">
+                  <svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg>
+                  Developed modern responsive UI with React and Tailwind CSS
+                </div>
+                <div class="highlight-item">
+                  <svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg>
+                  Phoneme-level pronunciation scoring via Azure Speech Services
+                </div>
+                <div class="highlight-item">
+                  <svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg>
+                  Conversational IELTS examiner engine powered by OpenAI API
+                </div>
+              </div>
+
+              <div class="tech-stack-chips">
+                <span class="chip">React</span>
+                <span class="chip">Tailwind CSS</span>
+                <span class="chip">Node.js</span>
+                <span class="chip">PostgreSQL</span>
+                <span class="chip">Azure Speech</span>
+                <span class="chip">OpenAI API</span>
+              </div>
+            </div>
+
+            <div class="project-actions">
+              <a href="https://github.com/afrin0201" target="_blank" rel="noopener noreferrer" class="btn btn-sm btn-primary">
+                <svg viewBox="0 0 24 24" width="16" height="16" fill="currentColor">
+                  <path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0 0 24 12c0-6.63-5.37-12-12-12z"/>
+                </svg>
+                <span>GitHub Team Project</span>
+              </a>
+              <button class="btn btn-sm btn-ghost project-details-btn" data-project="articulate">
+                <span>View Details</span>
+              </button>
+            </div>
+          </article>
+
+          <!-- PROJECT 3: Charulota E-Commerce Platform -->
+          <article class="project-card glass-panel" data-category="featured web" id="project-card-charulota">
+            <div class="project-card-top">
+              <div class="badge-row">
+                <span class="project-award-badge badge-blue">
+                  Course Project • CSE 216
+                </span>
+                <span class="repo-lang-badge lang-js">Node.js</span>
+              </div>
+              <h3 class="project-title">Charulota Online Clothing Store</h3>
+              <p class="project-affiliation">Database Sessional Project, BUET • Apr 2026 – May 2026</p>
+            </div>
+
+            <div class="project-body">
+              <p class="project-summary">
+                A full-stack boutique e-commerce web platform. Implemented end-to-end user experience, JWT authentication, and engineered complex Oracle Database schemas with PL/SQL triggers, stored procedures, and transaction management.
+              </p>
+
+              <div class="project-highlights">
+                <div class="highlight-item">
+                  <svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg>
+                  Custom PL/SQL triggers for automated inventory audits and orders
+                </div>
+                <div class="highlight-item">
+                  <svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg>
+                  Stateless JWT user auth with role-based access control
+                </div>
+                <div class="highlight-item">
+                  <svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg>
+                  RESTful Node.js/Express backend communicating with Oracle DB
+                </div>
+              </div>
+
+              <div class="tech-stack-chips">
+                <span class="chip">Node.js</span>
+                <span class="chip">Express</span>
+                <span class="chip">Oracle DB</span>
+                <span class="chip">PL/SQL</span>
+                <span class="chip">JWT</span>
+                <span class="chip">HTML/CSS</span>
+              </div>
+            </div>
+
+            <div class="project-actions">
+              <a href="https://github.com/afrin0201/charulota-clothing-store" target="_blank" rel="noopener noreferrer" class="btn btn-sm btn-primary">
+                <svg viewBox="0 0 24 24" width="16" height="16" fill="currentColor">
+                  <path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0 0 24 12c0-6.63-5.37-12-12-12z"/>
+                </svg>
+                <span>charulota-clothing-store</span>
+              </a>
+              <button class="btn btn-sm btn-ghost project-details-btn" data-project="charulota">
+                <span>View Details</span>
+              </button>
+            </div>
+          </article>
+
+          <!-- PROJECT 4: Student Database Management System -->
+          <article class="project-card glass-panel" data-category="systems" id="project-card-studentdb">
+            <div class="project-card-top">
+              <div class="badge-row">
+                <span class="project-award-badge badge-gray">Course Project • CSE 108</span>
+                <span class="repo-lang-badge lang-java">Java</span>
+              </div>
+              <h3 class="project-title">Student Database Management System</h3>
+              <p class="project-affiliation">Object Oriented Programming Sessional (Level-1 Term-2)</p>
+            </div>
+
+            <div class="project-body">
+              <p class="project-summary">
+                A desktop-grade student record and information management system built in Java. Implemented object-oriented principles, robust persistence, file serialization, and administrative controls.
+              </p>
+
+              <div class="tech-stack-chips">
+                <span class="chip">Java</span>
+                <span class="chip">OOP</span>
+                <span class="chip">File I/O</span>
+                <span class="chip">Data Structures</span>
+              </div>
+            </div>
+
+            <div class="project-actions">
+              <a href="https://github.com/afrin0201/Student-Database-Management-System" target="_blank" rel="noopener noreferrer" class="btn btn-sm btn-primary">
+                <svg viewBox="0 0 24 24" width="16" height="16" fill="currentColor">
+                  <path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0 0 24 12c0-6.63-5.37-12-12-12z"/>
+                </svg>
+                <span>Student-Database-Management-System</span>
+              </a>
+            </div>
+          </article>
+
+          <!-- PROJECT 5: SpaceShooter 2D Arcade Game -->
+          <article class="project-card glass-panel" data-category="systems" id="project-card-spaceshooter">
+            <div class="project-card-top">
+              <div class="badge-row">
+                <span class="project-award-badge badge-gray">Course Project • CSE 102</span>
+                <span class="repo-lang-badge lang-cpp">C++</span>
+              </div>
+              <h3 class="project-title">SpaceShooter Game</h3>
+              <p class="project-affiliation">Structured Programming Sessional (Level-1 Term-1)</p>
+            </div>
+
+            <div class="project-body">
+              <p class="project-summary">
+                A 2D space shooter arcade game built from scratch using C++ graphics libraries. Engineered collision detection, dynamic difficulty scaling, score tracking, audio effects, and sprite animations.
+              </p>
+
+              <div class="tech-stack-chips">
+                <span class="chip">C++</span>
+                <span class="chip">Game Physics</span>
+                <span class="chip">Collision Detection</span>
+                <span class="chip">Graphics Engine</span>
+              </div>
+            </div>
+
+            <div class="project-actions">
+              <a href="https://github.com/afrin0201/SpaceShooter-" target="_blank" rel="noopener noreferrer" class="btn btn-sm btn-primary">
+                <svg viewBox="0 0 24 24" width="16" height="16" fill="currentColor">
+                  <path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0 0 24 12c0-6.63-5.37-12-12-12z"/>
+                </svg>
+                <span>SpaceShooter-</span>
+              </a>
+            </div>
+          </article>
+
+          <!-- PROJECT 6: CSE-208 Data Structures & Algorithms -->
+          <article class="project-card glass-panel" data-category="systems" id="project-card-cse208">
+            <div class="project-card-top">
+              <div class="badge-row">
+                <span class="project-award-badge badge-gray">Coursework • CSE 208</span>
+                <span class="repo-lang-badge lang-cpp">C++</span>
+              </div>
+              <h3 class="project-title">Data Structures & Algorithms Sessional</h3>
+              <p class="project-affiliation">BUET CSE Level-2 Term-1 Course Implementations</p>
+            </div>
+
+            <div class="project-body">
+              <p class="project-summary">
+                Advanced graph algorithms (Dijkstra, Bellman-Ford, Floyd-Warshall), Maximum Flow, Disjoint Set Union (DSU), Segment Trees, and complex algorithmic problem solutions examined at BUET.
+              </p>
+
+              <div class="tech-stack-chips">
+                <span class="chip">C++</span>
+                <span class="chip">Graph Theory</span>
+                <span class="chip">Segment Trees</span>
+                <span class="chip">Algorithms</span>
+              </div>
+            </div>
+
+            <div class="project-actions">
+              <a href="https://github.com/afrin0201/CSE-208-Level-2-Term-1" target="_blank" rel="noopener noreferrer" class="btn btn-sm btn-primary">
+                <svg viewBox="0 0 24 24" width="16" height="16" fill="currentColor">
+                  <path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0 0 24 12c0-6.63-5.37-12-12-12z"/>
+                </svg>
+                <span>CSE-208-Level-2-Term-1</span>
+              </a>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- LIVE GITHUB STATS & ACTIVITY -->
+    <section class="section-padding section-github" id="github-stats">
+      <div class="container">
+        <div class="section-heading text-center">
+          <div class="sub-badge">Real-Time GitHub Integration</div>
+          <h2 class="section-title">Live GitHub Pulse</h2>
+          <p class="section-subtitle">Directly synced from <a href="https://github.com/afrin0201" target="_blank" rel="noopener noreferrer">@afrin0201</a>.</p>
+        </div>
+
+        <div class="github-stats-grid">
+          <div class="glass-panel github-stat-card">
+            <div class="stat-icon-wrap icon-cyan">
+              <svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M22 19a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h5l2 3h9a2 2 0 0 1 2 2z"></path>
+              </svg>
+            </div>
+            <div class="stat-meta">
+              <span class="stat-number" id="live-repo-count">7</span>
+              <span class="stat-title">Public Repositories</span>
+            </div>
+          </div>
+
+          <div class="glass-panel github-stat-card">
+            <div class="stat-icon-wrap icon-indigo">
+              <svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="2">
+                <circle cx="12" cy="12" r="10"></circle>
+                <line x1="2" y1="12" x2="22" y2="12"></line>
+                <path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"></path>
+              </svg>
+            </div>
+            <div class="stat-meta">
+              <span class="stat-number">BUET</span>
+              <span class="stat-title">Top Engineering Institute</span>
+            </div>
+          </div>
+
+          <div class="glass-panel github-stat-card">
+            <div class="stat-icon-wrap icon-violet">
+              <svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="2">
+                <polyline points="16 18 22 12 16 6"></polyline>
+                <polyline points="8 6 2 12 8 18"></polyline>
+              </svg>
+            </div>
+            <div class="stat-meta">
+              <span class="stat-number">4+</span>
+              <span class="stat-title">Core Languages (C++, Py, JS, Java)</span>
+            </div>
+          </div>
+
+          <div class="glass-panel github-stat-card">
+            <div class="stat-icon-wrap icon-emerald">
+              <svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="2">
+                <circle cx="12" cy="12" r="10"></circle>
+                <polyline points="12 6 12 12 14 14"></polyline>
+              </svg>
+            </div>
+            <div class="stat-meta">
+              <span class="stat-number" id="live-last-active">Active</span>
+              <span class="stat-title">Continuous GitHub Cadence</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- TECHNICAL SKILLS MATRIX -->
+    <section class="section-padding" id="skills">
+      <div class="container">
+        <div class="section-heading text-center">
+          <div class="sub-badge">Technical Stack</div>
+          <h2 class="section-title">Skills & Technologies</h2>
+          <p class="section-subtitle">Languages, frameworks, databases, and scientific tools utilized in production and research.</p>
+        </div>
+
+        <div class="skills-grid">
+          <!-- Programming Languages -->
+          <div class="skill-category-card glass-panel">
+            <div class="category-header">
+              <span class="category-icon">💻</span>
+              <h3 class="category-title">Programming Languages</h3>
+            </div>
+            <div class="skills-pill-cloud">
+              <div class="skill-chip"><span class="bullet c-cpp"></span>C / C++</div>
+              <div class="skill-chip"><span class="bullet c-python"></span>Python</div>
+              <div class="skill-chip"><span class="bullet c-java"></span>Java</div>
+              <div class="skill-chip"><span class="bullet c-js"></span>JavaScript (ES6+)</div>
+              <div class="skill-chip"><span class="bullet c-sql"></span>SQL & PL/SQL</div>
+              <div class="skill-chip"><span class="bullet c-html"></span>HTML5 / CSS3</div>
+            </div>
+          </div>
+
+          <!-- Frameworks & UI -->
+          <div class="skill-category-card glass-panel">
+            <div class="category-header">
+              <span class="category-icon">⚡</span>
+              <h3 class="category-title">Web & ML Frameworks</h3>
+            </div>
+            <div class="skills-pill-cloud">
+              <div class="skill-chip"><span class="bullet c-react"></span>React.js</div>
+              <div class="skill-chip"><span class="bullet c-node"></span>Node.js</div>
+              <div class="skill-chip"><span class="bullet c-express"></span>Express.js</div>
+              <div class="skill-chip"><span class="bullet c-tailwind"></span>Tailwind CSS</div>
+              <div class="skill-chip"><span class="bullet c-streamlit"></span>Streamlit</div>
+              <div class="skill-chip"><span class="bullet c-jwt"></span>JWT Authentication</div>
+            </div>
+          </div>
+
+          <!-- Databases & Cloud APIs -->
+          <div class="skill-category-card glass-panel">
+            <div class="category-header">
+              <span class="category-icon">🗄️</span>
+              <h3 class="category-title">Databases & Cloud APIs</h3>
+            </div>
+            <div class="skills-pill-cloud">
+              <div class="skill-chip"><span class="bullet c-oracle"></span>Oracle DB & PL/SQL</div>
+              <div class="skill-chip"><span class="bullet c-postgres"></span>PostgreSQL</div>
+              <div class="skill-chip"><span class="bullet c-azure"></span>Azure Speech Services</div>
+              <div class="skill-chip"><span class="bullet c-openai"></span>OpenAI API</div>
+              <div class="skill-chip"><span class="bullet c-rest"></span>RESTful APIs</div>
+            </div>
+          </div>
+
+          <!-- Tools & Scientific -->
+          <div class="skill-category-card glass-panel">
+            <div class="category-header">
+              <span class="category-icon">🛠️</span>
+              <h3 class="category-title">Tools & Academic Stack</h3>
+            </div>
+            <div class="skills-pill-cloud">
+              <div class="skill-chip"><span class="bullet c-git"></span>Git</div>
+              <div class="skill-chip"><span class="bullet c-github"></span>GitHub</div>
+              <div class="skill-chip"><span class="bullet c-latex"></span>LaTeX Typesetting</div>
+              <div class="skill-chip"><span class="bullet c-vscode"></span>VS Code</div>
+              <div class="skill-chip"><span class="bullet c-linux"></span>Linux / CLI</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- AWARDS & SCHOLARSHIPS -->
+    <section class="section-padding section-awards" id="awards">
+      <div class="container">
+        <div class="section-heading text-center">
+          <div class="sub-badge">Honors & Recognition</div>
+          <h2 class="section-title">Awards & Scholarships</h2>
+          <p class="section-subtitle">Academic excellence, competitive hackathons, and science olympiad accolades.</p>
+        </div>
+
+        <div class="awards-grid">
+          <!-- Award 1 -->
+          <div class="award-card glass-panel highlight-gold">
+            <div class="award-trophy-icon">🏆</div>
+            <div class="award-info">
+              <div class="award-year-tag">2026</div>
+              <h3 class="award-title">Certificate of Best Project</h3>
+              <p class="award-issuer">Department of Computer Science & Engineering, BUET</p>
+              <p class="award-description">
+                Awarded for outstanding engineering and novel implementation of the <strong>Fourier Domain Image Encryptor</strong> in CSE 220 (Signals and Linear Systems Sessional).
+              </p>
+            </div>
+          </div>
+
+          <!-- Award 2 -->
+          <div class="award-card glass-panel highlight-silver">
+            <div class="award-trophy-icon">🥈</div>
+            <div class="award-info">
+              <div class="award-year-tag">Jul 2026</div>
+              <h3 class="award-title">Finalist — SCIBLITZ 2.0 CUET AI Hackathon</h3>
+              <p class="award-issuer">Chittagong University of Engineering & Technology (CUET)</p>
+              <p class="award-description">
+                Reached national finals as part of a team of four with <strong>Articulate AI</strong>, an innovative AI spoken-English coach for native Bengali speakers.
+              </p>
+            </div>
+          </div>
+
+          <!-- Award 3 -->
+          <div class="award-card glass-panel">
+            <div class="award-trophy-icon">🎖️</div>
+            <div class="award-info">
+              <div class="award-year-tag">2024</div>
+              <h3 class="award-title">HSC General Scholarship</h3>
+              <p class="award-issuer">Dhaka Education Board, Bangladesh</p>
+              <p class="award-description">
+                Awarded scholarship by the Board of Intermediate and Secondary Education in recognition of exceptional academic merit in the Higher Secondary Certificate (HSC) examinations.
+              </p>
+            </div>
+          </div>
+
+          <!-- Award 4 -->
+          <div class="award-card glass-panel">
+            <div class="award-trophy-icon">🥇</div>
+            <div class="award-info">
+              <div class="award-year-tag">2023</div>
+              <h3 class="award-title">Triple Olympiad Winner (Physics, Chemistry & Biology)</h3>
+              <p class="award-issuer">Sabujbagh Govt College, Dhaka</p>
+              <p class="award-description">
+                Secured 1st place in all three scientific disciplines across the college-wide Science Olympiads.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- EDUCATION TIMELINE -->
+    <section class="section-padding" id="education">
+      <div class="container">
+        <div class="section-heading text-center">
+          <div class="sub-badge">Academic Background</div>
+          <h2 class="section-title">Education Journey</h2>
+          <p class="section-subtitle">Rigorous computer science curriculum and foundational scholastic honors.</p>
+        </div>
+
+        <div class="timeline-wrapper">
+          <div class="timeline-line"></div>
+
+          <!-- Education 1 -->
+          <div class="timeline-item">
+            <div class="timeline-dot active-dot"></div>
+            <div class="timeline-content glass-panel">
+              <div class="timeline-date">2025 – 2029 (Expected)</div>
+              <h3 class="timeline-degree">B.Sc. in Computer Science and Engineering</h3>
+              <h4 class="timeline-inst">Bangladesh University of Engineering and Technology (BUET), Dhaka</h4>
+              <p class="timeline-desc">
+                Enrolled in Bangladesh's premier engineering university. Key coursework includes Data Structures & Algorithms, Object-Oriented Programming, Signals & Linear Systems, Database Systems, and Discrete Mathematics.
+              </p>
+            </div>
+          </div>
+
+          <!-- Education 2 -->
+          <div class="timeline-item">
+            <div class="timeline-dot"></div>
+            <div class="timeline-content glass-panel">
+              <div class="timeline-date">2022 – 2024</div>
+              <h3 class="timeline-degree">Higher Secondary Certificate (HSC) — Science</h3>
+              <h4 class="timeline-inst">Sabujbagh Govt College, Dhaka</h4>
+              <p class="timeline-desc">
+                Graduated with top academic standing and achieved the prestigious <strong>HSC General Scholarship (2024)</strong>. Winner of Physics, Chemistry, and Biology Olympiads.
+              </p>
+            </div>
+          </div>
+
+          <!-- Education 3 -->
+          <div class="timeline-item">
+            <div class="timeline-dot"></div>
+            <div class="timeline-content glass-panel">
+              <div class="timeline-date">2013 – 2022</div>
+              <h3 class="timeline-degree">Secondary School Certificate (SSC) — Science</h3>
+              <h4 class="timeline-inst">Motijheel Govt. Girls High School, Dhaka</h4>
+              <p class="timeline-desc">
+                Completed secondary education with GPA 5.00, demonstrating a consistent commitment to scientific curiosity and analytical problem solving.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- INTERACTIVE DEVELOPER TERMINAL -->
+    <section class="section-padding section-terminal-wrap" id="terminal">
+      <div class="container">
+        <div class="section-heading text-center">
+          <div class="sub-badge">Interactive Shell</div>
+          <h2 class="section-title">Developer Terminal</h2>
+          <p class="section-subtitle">Execute terminal commands or click the suggestion tags below to inspect Syeda's records interactively.</p>
+        </div>
+
+        <div class="terminal-container glass-panel">
+          <div class="terminal-bar">
+            <div class="terminal-dots">
+              <span class="dot dot-red"></span>
+              <span class="dot dot-yellow"></span>
+              <span class="dot dot-green"></span>
+            </div>
+            <span class="terminal-title">bash — afrin0201@buet-cse: ~</span>
+            <button class="terminal-clear-btn" id="terminal-clear-btn" title="Clear screen">clear</button>
+          </div>
+
+          <div class="terminal-output" id="terminal-output" role="log" aria-live="polite">
+            <div class="terminal-log-line">Welcome to Syeda Afrin Jahan's Interactive Shell (v2.6)</div>
+            <div class="terminal-log-line">Type <span class="term-highlight">help</span> to view available commands, or click any command below:</div>
+            <div class="terminal-log-line">--------------------------------------------------</div>
+          </div>
+
+          <div class="terminal-input-row">
+            <span class="terminal-prompt">afrin0201@buet:~$</span>
+            <input type="text" id="terminal-input" class="terminal-input-field" placeholder="Try typing: skills, projects, honors, bio, contact..." autocomplete="off" spellcheck="false">
+          </div>
+
+          <div class="terminal-chips">
+            <span class="term-chip" data-cmd="help">help</span>
+            <span class="term-chip" data-cmd="bio">bio</span>
+            <span class="term-chip" data-cmd="projects">projects</span>
+            <span class="term-chip" data-cmd="skills">skills</span>
+            <span class="term-chip" data-cmd="honors">honors</span>
+            <span class="term-chip" data-cmd="github">github</span>
+            <span class="term-chip" data-cmd="contact">contact</span>
+            <span class="term-chip" data-cmd="clear">clear</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACT & COLLABORATION SECTION -->
+    <section class="section-padding section-contact" id="contact">
+      <div class="container">
+        <div class="section-heading text-center">
+          <div class="sub-badge">Get In Touch</div>
+          <h2 class="section-title">Let's Connect</h2>
+          <p class="section-subtitle">Interested in collaborating on HCI, AI research, or software development? Reach out anytime!</p>
+        </div>
+
+        <div class="contact-grid">
+          <!-- Contact Channels Info -->
+          <div class="contact-info-panel glass-panel">
+            <h3 class="panel-title">Direct Channels</h3>
+            <p class="panel-subtitle">Feel free to drop an email or connect through GitHub.</p>
+
+            <div class="contact-card-item">
+              <div class="contact-card-icon icon-cyan">
+                <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+                  <polyline points="22,6 12,13 2,6"></polyline>
+                </svg>
+              </div>
+              <div class="contact-card-content">
+                <span class="contact-card-label">Primary Email</span>
+                <a href="mailto:s.a.jahan.buetcse.394@gmail.com" class="contact-card-value">s.a.jahan.buetcse.394@gmail.com</a>
+                <button class="btn-copy-inline copy-email-btn" data-email="s.a.jahan.buetcse.394@gmail.com" title="Copy to clipboard">
+                  <svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2"><rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path></svg>
+                </button>
+              </div>
+            </div>
+
+            <div class="contact-card-item">
+              <div class="contact-card-icon icon-indigo">
+                <svg viewBox="0 0 24 24" width="22" height="22" fill="currentColor">
+                  <path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0 0 24 12c0-6.63-5.37-12-12-12z"/>
+                </svg>
+              </div>
+              <div class="contact-card-content">
+                <span class="contact-card-label">GitHub Profile</span>
+                <a href="https://github.com/afrin0201" target="_blank" rel="noopener noreferrer" class="contact-card-value">github.com/afrin0201</a>
+              </div>
+            </div>
+
+            <div class="contact-card-item">
+              <div class="contact-card-icon icon-emerald">
+                <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path>
+                </svg>
+              </div>
+              <div class="contact-card-content">
+                <span class="contact-card-label">Phone</span>
+                <span class="contact-card-value">(+880) 1612031950</span>
+              </div>
+            </div>
+
+            <div class="contact-card-item">
+              <div class="contact-card-icon icon-violet">
+                <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
+                  <circle cx="12" cy="10" r="3"></circle>
+                </svg>
+              </div>
+              <div class="contact-card-content">
+                <span class="contact-card-label">Location</span>
+                <span class="contact-card-value">Dhaka, Bangladesh</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Interactive Message Form -->
+          <div class="contact-form-panel glass-panel">
+            <h3 class="panel-title">Send a Message</h3>
+            <p class="panel-subtitle">Leave a quick message or research inquiry.</p>
+
+            <form id="contact-form" class="contact-form" novalidate>
+              <div class="form-group">
+                <label for="contact-name" class="form-label">Your Name</label>
+                <input type="text" id="contact-name" class="form-input" placeholder="e.g. Dr. Alex Mercer" required>
+                <span class="form-error" id="name-error">Please enter your name</span>
+              </div>
+
+              <div class="form-group">
+                <label for="contact-email" class="form-label">Your Email</label>
+                <input type="email" id="contact-email" class="form-input" placeholder="name@domain.com" required>
+                <span class="form-error" id="email-error">Please enter a valid email address</span>
+              </div>
+
+              <div class="form-group">
+                <label for="contact-subject" class="form-label">Subject</label>
+                <input type="text" id="contact-subject" class="form-input" placeholder="Collaboration / Research Inquiry" required>
+              </div>
+
+              <div class="form-group">
+                <label for="contact-message" class="form-label">Message</label>
+                <textarea id="contact-message" class="form-textarea" rows="4" placeholder="Hello Afrin, I saw your work on..." required></textarea>
+                <span class="form-error" id="message-error">Please write a message</span>
+              </div>
+
+              <button type="submit" class="btn btn-primary btn-block" id="btn-send-message">
+                <span>Send Message</span>
+                <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2">
+                  <line x1="22" y1="2" x2="11" y2="13"></line>
+                  <polygon points="22 2 15 22 11 13 2 9 22 2"></polygon>
+                </svg>
+              </button>
+
+              <div class="form-feedback" id="form-feedback" role="alert" style="display: none;"></div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container footer-content">
+      <div class="footer-left">
+        <p class="footer-copy">
+          Designed & Built by <strong>Syeda Afrin Jahan</strong> • BUET CSE
+        </p>
+        <p class="footer-subcopy">
+          Powered by HTML5, Vanilla CSS & Vanilla JavaScript. Synchronized with GitHub 
+          <a href="https://github.com/afrin0201" target="_blank" rel="noopener noreferrer">@afrin0201</a>.
+        </p>
+      </div>
+      <div class="footer-right">
+        <a href="#hero" class="btn btn-sm btn-ghost back-to-top" id="back-to-top-btn" aria-label="Back to Top">
+          <span>Back to Top</span>
+          <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2">
+            <polyline points="18 15 12 9 6 15"></polyline>
+          </svg>
+        </a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- PROJECT DETAIL MODAL -->
+  <div class="modal-overlay" id="project-modal" aria-hidden="true" role="dialog" aria-labelledby="modal-project-title">
+    <div class="modal-card glass-panel">
+      <div class="modal-header">
+        <h3 id="modal-project-title" class="modal-title">Project Details</h3>
+        <button class="icon-btn modal-close-btn" id="modal-close-btn" aria-label="Close modal">
+          <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2">
+            <line x1="18" y1="6" x2="6" y2="18"></line>
+            <line x1="6" y1="6" x2="18" y2="18"></line>
+          </svg>
+        </button>
+      </div>
+      <div class="modal-body" id="modal-body-content">
+        <!-- Injected via JavaScript -->
+      </div>
+    </div>
+  </div>
+
+  <!-- TOAST NOTIFICATION -->
+  <div class="toast-container" id="toast-container" aria-live="polite"></div>
+
+  <script src="app.js"></script>
+</body>
+</html>

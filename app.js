@@ -20,7 +20,7 @@ document.addEventListener('DOMContentLoaded', () => {
    =================================================================== */
 function initTheme() {
   const toggleBtn = document.getElementById('theme-toggle-btn');
-  const storedTheme = localStorage.getItem('saj_theme') || 'dark';
+  const storedTheme = localStorage.getItem('saj_theme') || 'light';
 
   document.body.setAttribute('data-theme', storedTheme);
 

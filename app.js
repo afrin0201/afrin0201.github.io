@@ -94,43 +94,57 @@ function initNavigation() {
   // Mobile drawer toggle
   if (mobileToggle && navMenu) {
     mobileToggle.addEventListener('click', () => {
-      navMenu.classList.toggle('open');
+      navMenu.classList.toggle('active');
     });
 
     // Close mobile menu when a link is clicked
     navLinks.forEach(link => {
       link.addEventListener('click', () => {
-        navMenu.classList.remove('open');
+        navMenu.classList.remove('active');
       });
     });
   }
 
   // Active section scrollspy
   const sections = document.querySelectorAll('section[id]');
-  window.addEventListener('scroll', () => {
-    let currentSectionId = '';
-    const scrollPos = window.scrollY + 120;
 
-    sections.forEach(sec => {
-      const top = sec.offsetTop;
-      const height = sec.offsetHeight;
-      if (scrollPos >= top && scrollPos < top + height) {
-        currentSectionId = sec.getAttribute('id');
-      }
-    });
+  function updateActiveNav() {
+    if (!sections.length) return;
+    let currentSectionId = '';
+    const scrollPos = window.scrollY + 140;
+    const isAtBottom = (window.innerHeight + window.scrollY) >= (document.documentElement.scrollHeight - 80);
+
+    if (isAtBottom) {
+      currentSectionId = sections[sections.length - 1].getAttribute('id');
+    } else if (window.scrollY < 120) {
+      currentSectionId = sections[0].getAttribute('id');
+    } else {
+      sections.forEach(sec => {
+        const top = sec.offsetTop;
+        const height = sec.offsetHeight;
+        if (scrollPos >= top && scrollPos < top + height) {
+          currentSectionId = sec.getAttribute('id');
+        }
+      });
+    }
 
     navLinks.forEach(link => {
       link.classList.remove('active');
-      if (link.getAttribute('href') === `#${currentSectionId}`) {
+      const href = link.getAttribute('href');
+      if (
+        href === `#${currentSectionId}` ||
+        (currentSectionId === 'about' && href === '#hero') ||
+        (currentSectionId === 'hero' && href === '#about')
+      ) {
         link.classList.add('active');
       }
     });
-  });
+  }
+
+  window.addEventListener('scroll', updateActiveNav, { passive: true });
+  updateActiveNav();
 }
 
-/* ===================================================================
-   4. PROJECT FILTERING
-   =================================================================== */
 function initProjectFiltering() {
   const filterBtns = document.querySelectorAll('.filter-btn');
   const projectCards = document.querySelectorAll('.project-card');
@@ -146,7 +160,6 @@ function initProjectFiltering() {
         const categories = (card.getAttribute('data-category') || '').split(' ');
         if (filterVal === 'all' || categories.includes(filterVal)) {
           card.style.display = 'flex';
-          card.style.animation = 'fadeInCard 0.35s ease forwards';
         } else {
           card.style.display = 'none';
         }
@@ -244,6 +257,77 @@ const projectDetailsData = {
           <span style="color: var(--text-muted);"># Repository:</span><br>
           https://github.com/afrin0201/charulota-clothing-store
         </div>
+      </div>
+    `
+  },
+  studentdb: {
+    title: 'Student Database Management System',
+    badge: 'Course Project • BUET CSE 108',
+    repo: 'https://github.com/afrin0201/Student-Database-Management-System',
+    html: `
+      <div class="modal-detail-block">
+        <p><strong>Course:</strong> CSE 108 (Object Oriented Programming Sessional), BUET</p>
+        <p><strong>Stack:</strong> Java, OOP Principles, File I/O, Custom Data Structures</p>
+        
+        <h4 style="margin-top: 1.25rem; margin-bottom: 0.5rem; color: var(--accent-primary);">Technical Overview</h4>
+        <p>
+          A modular, robust Java desktop application built to demonstrate core Object-Oriented Design principles, data encapsulation, file serialization, and record management for university students.
+        </p>
+
+        <h4 style="margin-top: 1.25rem; margin-bottom: 0.5rem; color: var(--accent-primary);">Key Engineering Features</h4>
+        <ul style="padding-left: 1.25rem; margin-bottom: 1rem; color: var(--text-secondary);">
+          <li>Implemented clean class hierarchies with inheritance, polymorphism, and interfaces.</li>
+          <li>Engineered persistent file-based record storage with automated validation and error recovery.</li>
+          <li>Supported fast searching, filtering, and grading record computations.</li>
+        </ul>
+      </div>
+    `
+  },
+  spaceshooter: {
+    title: 'SpaceShooter 2D Arcade Game',
+    badge: 'Course Project • BUET CSE 102',
+    repo: 'https://github.com/afrin0201/SpaceShooter-',
+    html: `
+      <div class="modal-detail-block">
+        <p><strong>Course:</strong> CSE 102 (Structured Programming Sessional), BUET</p>
+        <p><strong>Stack:</strong> C++, 2D Game Physics, Collision Detection, Sprite Graphics</p>
+        
+        <h4 style="margin-top: 1.25rem; margin-bottom: 0.5rem; color: var(--accent-primary);">Technical Overview</h4>
+        <p>
+          An arcade-style 2D space shooter implemented in pure C++. Designed custom game loop physics, real-time collision detection, enemy wave generators, score tracking, and audio integration.
+        </p>
+
+        <h4 style="margin-top: 1.25rem; margin-bottom: 0.5rem; color: var(--accent-primary);">Key Engineering Features</h4>
+        <ul style="padding-left: 1.25rem; margin-bottom: 1rem; color: var(--text-secondary);">
+          <li>Engineered 60 FPS real-time game loop with delta-time physics calculations.</li>
+          <li>Implemented Axis-Aligned Bounding Box (AABB) collision algorithms.</li>
+          <li>Dynamic difficulty scaling and high-score persistence.</li>
+        </ul>
+      </div>
+    `
+  },
+  cse208: {
+    title: 'Data Structures & Algorithms Sessional',
+    badge: 'Coursework • BUET CSE 208',
+    repo: 'https://github.com/afrin0201/CSE-208-Level-2-Term-1',
+    html: `
+      <div class="modal-detail-block">
+        <p><strong>Course:</strong> CSE 208 (Data Structures and Algorithms Sessional), BUET</p>
+        <p><strong>Level:</strong> Level-2 Term-1</p>
+        <p><strong>Stack:</strong> C++, Advanced Graph Algorithms, Dynamic Programming</p>
+        
+        <h4 style="margin-top: 1.25rem; margin-bottom: 0.5rem; color: var(--accent-primary);">Technical Overview</h4>
+        <p>
+          Comprehensive laboratory implementations of advanced algorithmic paradigms and data structures taught in the prestigious BUET CSE curriculum.
+        </p>
+
+        <h4 style="margin-top: 1.25rem; margin-bottom: 0.5rem; color: var(--accent-primary);">Implemented Algorithms</h4>
+        <ul style="padding-left: 1.25rem; margin-bottom: 1rem; color: var(--text-secondary);">
+          <li>Shortest Path: Dijkstra, Bellman-Ford, Floyd-Warshall.</li>
+          <li>Network Flow: Ford-Fulkerson, Edmonds-Karp maximum bipartite matching.</li>
+          <li>Tree & Query Structures: Segment Trees with lazy propagation, Disjoint Set Union (DSU).</li>
+          <li>Greedy & Dynamic Programming optimization solutions.</li>
+        </ul>
       </div>
     `
   }
